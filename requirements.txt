@@ -1,0 +1,5 @@
+docopt
+prometheus_client
+PyYAML
+requests
+python-json-logger

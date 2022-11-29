@@ -1,0 +1,15 @@
+.vagrant
+.dump
+.idea
+.venv
+.pyc
+.eggs/
+*.egg-info/
+.tox/
+build/
+dist/
+.vs
+.vscode
+.DS_Store
+*.swp
+.mypy_cache/

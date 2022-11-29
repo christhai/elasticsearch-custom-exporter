@@ -1,0 +1,21 @@
+{
+  "git": {
+    "tagName": "v${version}"
+  },
+  "github": {
+    "releaseName": "v${version}",
+    "tagAnnotation": "Release v${version}",
+    "commitMessage": "Release v${version}",
+    "release": true,
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/conf/changelog-compact.hbs"
+  },
+  "hooks": {
+    "after:bump": "npx auto-changelog --commit-limit false https://raw.githubusercontent.com/release-it/release-it/master/conf/keepachangelog.hbs"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
